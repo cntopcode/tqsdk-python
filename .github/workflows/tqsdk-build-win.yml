@@ -1,6 +1,6 @@
 name: tqsdk-build-win
 
-on: [push]
+on: [push-]
 
 jobs:
   build:
