@@ -46,7 +46,7 @@ jobs:
         pip install autodocsumm sphinx_rtd_theme jieba
 
     - name: Run Test Case
-      run: python -W ignore::DeprecationWarning -m pytest
+      run: python -W ignore::DeprecationWarning -m pytest --log-file=test_detail.log
 
     - name: build Wheel on Linux Platform
       run: |
