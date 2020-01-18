@@ -35,9 +35,9 @@ jobs:
 
     - name: Run Test Case
       run: |
-        python -W ignore::DeprecationWarning -m pytest
-        --log-level=DEBUG
-        --log-cli-level=WARNING
+        python -W ignore::DeprecationWarning -m pytest\
+        --log-level=DEBUG\
+        --log-cli-level=WARNING\
         --log-file=${{matrix.python-version}}_${{matrix.python-arch}}_$(date -d today +%Y%m%d)_$(git rev-parse --short HEAD).log
 
     - name: Run Test Case
